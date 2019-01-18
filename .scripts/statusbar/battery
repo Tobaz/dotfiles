@@ -1,0 +1,26 @@
+#!/bin/sh
+# Give a battery name (e.g. BAT0) as an argument.
+
+# full > short > color
+# get xresources colors
+for x in "$(xrdb -query | sed '/.color/!d' | sed "s/.*\./export /g;s/:\s*/=\"/g;s/$/\"/g")"; do eval "$x"; done
+
+capacity=$(cat /sys/class/power_supply/BAT0/capacity) || exit
+status=$(cat /sys/class/power_supply/BAT0/status)
+
+if [ "$capacity" -ge 75 ]; then
+	color="$color10"
+elif [ "$capacity" -ge 50 ]; then
+	color="$color15"
+elif [ "$capacity" -ge 25 ]; then
+	color="$color11"
+else
+	color="$color9"
+	warn="ERROR"
+fi
+
+[ -z $warn ] && warn=" "
+
+[ "$status" = "Charging" ] && color="$color15"
+
+printf "<span color='%s'>%s%s%s</span>" "$color" "$(echo "$status" | sed -e "s/,//g;s/Discharging/🔋/;s/Charging/🔌/;s/Unknown/♻️/;s/Full/⚡/;s/ 0*/ /g;s/ :/ /g")" "$warn" "$(echo "$capacity" | sed -e 's/$/%/')"
