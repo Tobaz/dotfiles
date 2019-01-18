@@ -3,7 +3,7 @@
 
 # full > short > color
 # get xresources colors
-for x in "$(xrdb -query | sed '/.color/!d' | sed "s/.*\./export /g;s/:\s*/=\"/g;s/$/\"/g")"; do eval "$x"; done
+for x in "$(xrdb -query | sed "/.color/!d;s/.*\./export /g;s/:\s*/=\"/g;s/$/\"/g")"; do eval "$x"; done
 
 capacity=$(cat /sys/class/power_supply/BAT0/capacity) || exit
 status=$(cat /sys/class/power_supply/BAT0/status)
