@@ -1,0 +1,27 @@
+#MagiCSS-bookmarklet .CodeMirror-hscrollbar {
+    right: 15px !important;
+}
+#MagiCSS-bookmarklet .CodeMirror-vscrollbar {
+    bottom: 0px !important;
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+
+#MagiCSS-bookmarklet .codemirror-hscrollbar {
+  	overflow-x: auto;
+}
+#MagiCSS-bookmarklet .codemirror-vscrollbar {
+  	overflow-y: auto;
+}
+
+#MagiCSS-bookmarklet {
+    width: auto;
+}
+
+#MagiCSS-bookmarklet .CodeMirror-activeline-background {
+    background: rgba(232, 242, 255, 0.5);
+}
+
+html .CodeMirror-hints {
+    z-index: 2147483600;
+}

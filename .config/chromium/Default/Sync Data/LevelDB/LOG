@@ -1,0 +1,9 @@
+2019/01/16-12:37:16.426 30d1 Reusing MANIFEST /home/cody/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
+2019/01/16-12:37:16.426 30d1 Recovering log #4
+2019/01/16-12:37:16.428 30d1 Reusing old log /home/cody/.config/chromium/Default/Sync Data/LevelDB/000004.log 
+2019/01/16-14:13:59.082 3c6d Level-0 table #8: started
+2019/01/16-14:13:59.138 3c6d Level-0 table #8: 113869 bytes OK
+2019/01/16-14:13:59.172 3c6d Delete type=0 #4
+2019/01/17-10:40:53.526 3c6d Level-0 table #10: started
+2019/01/17-10:40:53.639 3c6d Level-0 table #10: 95055 bytes OK
+2019/01/17-10:40:53.876 3c6d Delete type=0 #7
