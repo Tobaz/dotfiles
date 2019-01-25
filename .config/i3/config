@@ -31,7 +31,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec --no-startup-id urxvt
+bindsym $mod+Return exec --no-startup-id st
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -193,8 +193,5 @@ for_window [class="feh"] floating enable
 for_window [class="Preferences"] floating enable
 for_window [class="dialog"] floating enable
 for_window [class="menu"] floating enable
-
-
-
 
 exec --no-startup-id compton

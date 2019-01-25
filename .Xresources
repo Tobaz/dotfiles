@@ -1,12 +1,12 @@
-URxvt*font: xft:Bitstream Vera Sans Mono:size=8:antialiasing=true
+!URxvt*font: xft:Bitstream Vera Sans Mono:size=8:antialiasing=true
 !transparency handled by compton
 !URxvt*transparent: true
 !URxvt*shading: 20
-URxvt*scrollBar: false
+!URxvt*scrollBar: false
 
-URxvt*foreground: #e5e5e5 
-URxvt*background: #1d1d1d
-URxvt*cursorColor: #FFF9EC
+!URxvt*foreground: #e5e5e5 
+!URxvt*background: #1d1d1d
+!URxvt*cursorColor: #FFF9EC
 
 !Black
 *.color0: #121212
@@ -32,3 +32,7 @@ URxvt*cursorColor: #FFF9EC
 !White
 *.color7: #E0E0E0
 *.color15: #e5e5e5
+
+*.alpha: 155
+!! Default font and size
+!! *.font: Monospace-14
